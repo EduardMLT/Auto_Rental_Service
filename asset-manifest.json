@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/react_template_lesson_9/static/css/main.7acaea2f.css",
-    "main.js": "/react_template_lesson_9/static/js/main.07d3183d.js",
+    "main.css": "/react_template_lesson_9/static/css/main.cd2e038f.css",
+    "main.js": "/react_template_lesson_9/static/js/main.3f63b8b6.js",
+    "static/js/480.6b9070ed.chunk.js": "/react_template_lesson_9/static/js/480.6b9070ed.chunk.js",
+    "static/js/694.2d05f56f.chunk.js": "/react_template_lesson_9/static/js/694.2d05f56f.chunk.js",
+    "static/js/214.6cfaaf14.chunk.js": "/react_template_lesson_9/static/js/214.6cfaaf14.chunk.js",
+    "static/js/138.efc69ddb.chunk.js": "/react_template_lesson_9/static/js/138.efc69ddb.chunk.js",
+    "static/js/144.7459f2b9.chunk.js": "/react_template_lesson_9/static/js/144.7459f2b9.chunk.js",
+    "static/media/rent-a-car.jpg": "/react_template_lesson_9/static/media/rent-a-car.bf7d88614e423df9d265.jpg",
     "index.html": "/react_template_lesson_9/index.html",
-    "main.7acaea2f.css.map": "/react_template_lesson_9/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react_template_lesson_9/static/js/main.07d3183d.js.map"
+    "main.cd2e038f.css.map": "/react_template_lesson_9/static/css/main.cd2e038f.css.map",
+    "main.3f63b8b6.js.map": "/react_template_lesson_9/static/js/main.3f63b8b6.js.map",
+    "480.6b9070ed.chunk.js.map": "/react_template_lesson_9/static/js/480.6b9070ed.chunk.js.map",
+    "694.2d05f56f.chunk.js.map": "/react_template_lesson_9/static/js/694.2d05f56f.chunk.js.map",
+    "214.6cfaaf14.chunk.js.map": "/react_template_lesson_9/static/js/214.6cfaaf14.chunk.js.map",
+    "138.efc69ddb.chunk.js.map": "/react_template_lesson_9/static/js/138.efc69ddb.chunk.js.map",
+    "144.7459f2b9.chunk.js.map": "/react_template_lesson_9/static/js/144.7459f2b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.cd2e038f.css",
+    "static/js/main.3f63b8b6.js"
   ]
 }
