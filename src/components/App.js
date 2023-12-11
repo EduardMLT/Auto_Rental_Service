@@ -1,19 +1,27 @@
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import HomePage from 'pages/HomePage';
-import QuizzesPage from 'pages/QuizzesPage';
-import CreateQuizPage from 'pages/CreateQuizPage';
-import SingleQuizPage from 'pages/SingleQuizPage';
+
 import { AppLayout } from './AppLayout';
+
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage/CatalogPage'));
+const FavoritePage = lazy(() => import('./pages/FavoritePage/FavoritePage'));
+const SingleCatalogPage = lazy(() =>
+  import('./pages/SingleCatalogPage/SingleCatalogPage')
+);
+
+
 
 export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="create" element={<CreateQuizPage />} />
-        <Route path="quizzes" element={<QuizzesPage />} />
-        <Route path="quizzes/:quizId" element={<SingleQuizPage />} />
+        <Route path="favorite" element={<FavoritePage />} />
+        <Route path="catalog" element={<CatalogPage />} />
+        <Route path="catalog/:autoId" element={<SingleCatalogPage />} />
       </Route>
     </Routes>
   );
 };
+

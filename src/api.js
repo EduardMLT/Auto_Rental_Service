@@ -1,23 +1,34 @@
 import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL = 'https://64dcf6bce64a8525a0f76db7.mockapi.io/api';
+axios.defaults.baseURL = 'https://6574665df941bda3f2afb2f5.mockapi.io/api/v1/';
+// axios.defaults.baseURL = "https://651fc0b1906e276284c373de.mockapi.io/api/v1/"; "/adverts";
 
-export const fetchQuizzes = async () => {
-  const response = await axios.get('/quizzes');
-  return response.data;
-};
+export const setAdverts = createAsyncThunk(
+  'catalog/fetchAdverts',
+  async (page, thunkAPI) => {
+    try {
+      const res = await axios.get('/data_auto', {
+        params: { page: page, limit: 4 },
+      });
 
-export const fetchQuizById = async quizId => {
-  const response = await axios.get(`/quizzes/${quizId}`);
-  return response.data;
-};
+      console.log('operations ', res.data);
 
-export const deleteQuizById = async quizId => {
-  const response = await axios.delete(`/quizzes/${quizId}`);
-  return response.data;
-};
+      return res.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
+  }
+);
 
-export const createQuiz = async quiz => {
-  const response = await axios.post('/quizzes', quiz);
-  return response.data;
-};
+export const setAllAdverts = createAsyncThunk(
+  'catalog/fetchAllAdverts',
+  async (_, thunkAPI) => {
+    try {
+      const res = await axios.get('/data_auto');
+      return res.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
+  }
+);

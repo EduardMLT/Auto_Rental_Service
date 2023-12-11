@@ -1,16 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, NavBlock } from './Nav.styled';
 
 export const Nav = () => {
   return (
     <nav>
-      <ul>
+      <NavBlock>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/quizzes">Quizzes</Link>
+          <Link to="/catalog">Catalog</Link>
         </li>
-      </ul>
+        <li>
+          <Link to="/favorite">Favorite</Link>
+        </li>
+      </NavBlock>
     </nav>
   );
 };
