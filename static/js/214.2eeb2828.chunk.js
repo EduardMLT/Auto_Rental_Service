@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_template_lesson_9=self.webpackChunkreact_template_lesson_9||[]).push([[214],{214:function(e,t,a){a.r(t);var s=a(1087),r=a(184);t.default=function(){return(0,r.jsxs)("div",{children:["FavoritePage",(0,r.jsx)("br",{}),(0,r.jsx)(s.rU,{to:"/catalog",children:"Catalog"}),(0,r.jsx)("br",{})]})}}}]);
+//# sourceMappingURL=214.2eeb2828.chunk.js.map

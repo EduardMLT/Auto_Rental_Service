@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_template_lesson_9=self.webpackChunkreact_template_lesson_9||[]).push([[214],{214:function(e,t,a){a.r(t);var s=a(1087),l=a(184);t.default=function(){return(0,l.jsxs)("div",{children:["FavoritePage",(0,l.jsx)("br",{}),(0,l.jsx)(s.rU,{to:"/catalog",children:"Catalog"}),(0,l.jsx)("br",{}),(0,l.jsx)(s.rU,{to:"/catalog/autoId",children:"single_Catalog"})]})}}}]);
-//# sourceMappingURL=214.6cfaaf14.chunk.js.map
