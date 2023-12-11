@@ -21,6 +21,7 @@ export const App = () => {
         <Route path="catalog" element={<CatalogPage />} />
         <Route path="catalog/:autoId" element={<SingleCatalogPage />} />
       </Route>
+      <Route path="*" element={<HomePage />} />
     </Routes>
   );
 };

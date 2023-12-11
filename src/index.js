@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
+// import { Provider } from 'react-redux';
+// import { PersistGate } from 'redux-persist/integration/react';
 
 // import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'components/GlobalStyle';
 import { App } from 'components/App';
 
-import { store, persist } from 'components/redux/store';
+// import { store, persist } from 'components/redux/store';
 
 
 // const theme = {
@@ -24,15 +24,11 @@ import { store, persist } from 'components/redux/store';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <PersistGate persist={persist}>
-        <BrowserRouter basename="/react_template_lesson_9">
-          {/* <ThemeProvider theme={theme}> */}
-          <App />
-          <GlobalStyle />
-          {/* </ThemeProvider> */}
-        </BrowserRouter>
-      </PersistGate>
-    </Provider>
+    <BrowserRouter basename="/react_template_lesson_9">
+      {/* <ThemeProvider theme={theme}> */}
+      <App />
+      <GlobalStyle />
+      {/* </ThemeProvider> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
