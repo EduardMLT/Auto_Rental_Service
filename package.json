@@ -1,8 +1,8 @@
 {
-  "name": "react_template_lesson_9",
+  "name": "auto_rental_service",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EduardMLT.github.io/react_template_lesson_9/",
+  "homepage": "https://EduardMLT.github.io/auto_rental_service/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.16.3",

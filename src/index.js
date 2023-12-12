@@ -24,7 +24,7 @@ import { App } from 'components/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/react_template_lesson_9">
+    <BrowserRouter basename="/auto_rental_service">
       {/* <ThemeProvider theme={theme}> */}
       <App />
       <GlobalStyle />
